@@ -1,0 +1,20 @@
+:root {
+    --textcolor: black;
+    --bg_color: #f2f2f2;
+    --body_color: #e6e6e6;
+    --section_color: #4d4d4d;
+    --link_color: #0066CC;
+}
+
+#arrow {
+    fill:white;
+}
+
+
+@media (max-width: 767px) {
+    
+    #arrow {
+        fill:var(--textcolor);
+    }
+    
+}

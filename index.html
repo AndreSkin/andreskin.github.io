@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="AndreSkin's personal page, MSc CS student">
+
+  <title>AndreSkin.it</title>
+  <link rel="icon" type="image/x-icon" href="./media/favicon.ico">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" id="css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <NOSCRIPT>
+    JavaScript is not enabled: please enable it to change theme and see email.  
+  </NOSCRIPT>
+    <button type="button" id="scrollToTop" title="Back to top" alt="Back to top" aria-hidden="true">
+        <svg id="arrow" xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+        </svg>
+      </button>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <span class="navbar-brand">AndreSkin</span>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <button id="theme" title="Switch theme" alt="Switch theme">
+          <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+            <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+          </svg>
+        </button>
+      </li>
+  </nav>
+
+  <header id="home" class="jumbotron jumbotron-fluid text-center text-white">
+    <div class="container d-flex align-items-center justify-content-center">
+      
+      <div class="image-container">
+        <img src="media/my_photo.jpg" class="myphoto" alt="My photo">
+      </div>
+      
+      <div class="text-container">
+        <h1 class="display-4">Hi, I'm AndreSkin</h1>
+        <p class="lead">Currently studying Computer Science MSc at the University of Bologna</p>
+      </div>
+
+    </div>
+  </header>
+  
+
+  <section id="about" class="bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center">Things I like</h2>
+      <ul class="text-center">
+        <li>Digital forensics</li>           
+        <li>European computer law</li>
+        <li>Cybersecurity</li>
+        <li>Programming</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center">University projects</h2>
+      <p class="text-center">Here's a selection of projects I took part into during univeristy courses:</p>
+
+      <div class="container proj">
+        <h3><a href="https://github.com/AndreSkin/progetto_TwittEarth" >TwittEarth</a></h3>
+        <p>A Twitter client developed for the Software Engeneering course.</p>
+        <h3> <a href="https://github.com/AndreSkin/progetto_PandOs" >PandOS</a></h3>
+        <p>Queue manager, kernel and support level for <a href="http://wiki.virtualsquare.org/#!education/pandos.md" > didactic operative system</a> PandOS.</p>
+        <h3> <a href="https://github.com/AndreSkin/progetto_deblur" >Image deblur</a></h3>
+        <p>Image deblurring using Python for the Numerical Computing course. </p>
+        <h3> <a href="https://github.com/AndreSkin/progetto_movida" >Movida</a></h3>
+        <p>MOVIes Data and Algorithms: movie database manager using sorting algorithms and trees in Java.</p>
+        <h3> <a href="https://github.com/AndreSkin/progetto_car-race" >Car race</a></h3>
+        <p>The very first project I worked on: a C++ ASCII car game.<br> &nbsp; </p>
+    </div>
+
+    </div>
+  </section>
+
+
+  <section id="contact" class="bg-dark text-white">
+    <div class="container icons">
+      <h2 class="text-center">Contacts</h2>
+      <NOSCRIPT>
+        You need to enable JavaScript to see email. <br> 
+      </NOSCRIPT>
+        <button id="e_add" title="Email" alt="Click for email address">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+            </svg>
+          </button>
+
+        <a href="https://github.com/AndreSkin" title="GitHub" alt="Github">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+        </svg> 
+        </a>
+
+        <a href="https://orcid.org/0009-0000-0046-7442" title="ORCID" alt="Orcid">
+            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license 
+                (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M294.75 188.19h-45.92V342h47.47c67.62 0 83.12-51.34 83.12-76.91 0-41.64-26.54-76.9-84.67-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.79 360.76h-29.84v-207.5h29.84zm-14.92-231.14a19.57 19.57 0 1 1 19.57-19.57 19.64 19.64 0 0 1-19.57 19.57zM300 369h-81V161.26h80.6c76.73 0 110.44 54.83 110.44 103.85C410 318.39 368.38 369 300 369z"/>
+            </svg>
+        </a>
+
+        <a href="media/Andrea_Schinoppi_CV_eng.pdf" title="Curriculum vitae" alt="Curriculum vitae">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
+                <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z"/>
+            </svg>
+        </a>
+    </div>
+  </section>
+
+  <footer class="footer bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>This website <a href="https://github.com/orgs/community/discussions/22757" > does not use cookies</a> and gathers no personal user data.</p>
+            <p>The contents of this website are released under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" > CC BY-NC-SA 4.0</a> licence. </p>
+        </div>
+  </footer>
+
+  <script type="text/javascript" src="script/script.js"></script>
+
+</body>
+</html>
