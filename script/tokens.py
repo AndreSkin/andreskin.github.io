@@ -1,33 +1,31 @@
 import numpy as np
 
-# Function to reconstruct the string from the tokens
-def reconstruct_string(tokens, target_Str):
+def reconstruct_string(tokens, target_str):
     indexes = []
-    str = ""
-    #Iterate through the string and find the indexes of the tokens
-    for char in target_Str:
-        str += char
-        if str in tokens:
-            indexes.append(np.where(tokens == str)[0][0])
-            str = ""
+    start_index = 0
+    
+    while start_index < len(target_str):
+        found = False
+        for length in range(1, len(target_str) - start_index + 1):
+            substring = target_str[start_index:start_index + length]
+            if substring in tokens:
+                indexes.append(np.where(tokens == substring)[0][0])
+                start_index += length
+                found = True
+                break
+        if not found:
+            start_index += 1
+    
     return indexes
 
-
-objective = 'your_string_here'
-#Get uniuqe tokens and shuffle them
-tokenlist = list(set(objective))
-tokenlist = np.array(tokenlist)
+objective = 'andrea.schinoppi@studio.unibo.it'
+tokenlist = np.array(list(set(objective)))  # Unique tokens
 np.random.shuffle(tokenlist)
-print(tokenlist)
 
-#Reconstruct the string by finding the indexes of the tokens
+print("Shuffled tokens:", tokenlist)
+
 result = reconstruct_string(tokenlist, objective)
+print("Indexes:", [int(i) for i in result])  # Converting np.int64 to int
 
-print(result)
-
-for elem in result:
-    #Check correctness
-    print(tokenlist[elem],end="")
-
-
-
+reconstructed_string = ''.join(tokenlist[i] for i in result)
+print("Reconstructed string:", reconstructed_string)

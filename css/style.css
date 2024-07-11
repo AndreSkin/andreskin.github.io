@@ -33,6 +33,10 @@ button{
     outline: none;
 }
 
+button:focus, a:focus {
+    outline: 3px solid #0056b3;
+  }
+
 .navbar {
     background-color: var(--bg_color);
 }
