@@ -18,7 +18,7 @@ def reconstruct_string(tokens, target_str):
     
     return indexes
 
-objective = 'andrea.schinoppi@studio.unibo.it'
+objective = 'MY_EMAIL'
 tokenlist = np.array(list(set(objective)))  # Unique tokens
 np.random.shuffle(tokenlist)
 

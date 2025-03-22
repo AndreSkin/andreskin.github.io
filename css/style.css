@@ -10,7 +10,7 @@
 }
 
 * {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif, 'Open Sans' ;
 }
 
 body {
@@ -66,6 +66,11 @@ button:focus, a:focus {
     color: var(--section_color);
 }
 
+section{
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
 footer.footer {
     margin-top: 40px;
 }
@@ -76,6 +81,7 @@ ul.text-center {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0px;
 }
   
 ul.text-center li {
